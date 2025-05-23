@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # Intercom-admin-clone
 🚀 Intercom UI Clone — BeyondChats Internship Assignment
 This project is a frontend replica of Intercom's AI-powered chat dashboard, built as part of the assignment round for a paid internship opportunity at BeyondChats.
@@ -32,7 +19,7 @@ React.js (Functional Components + Hooks)
 
 Lucide-react (for icons)
 
-Deployed on: [Vercel / Netlify] (Update with your deployment platform)
+Deployed on: Vercel
 
 ✨ Features
 💬 Chat Inbox Interface (View chat list, open a conversation)
@@ -46,11 +33,13 @@ Deployed on: [Vercel / Netlify] (Update with your deployment platform)
 💡 Dummy chat data and suggested text to simulate real experience
 
 📸 Preview
-![image](https://github.com/user-attachments/assets/de3b8009-8c7f-46ed-a11d-7a4aed547ee1)
+![image](https://github.com/user-attachments/assets/80a3f98a-78c0-46d8-a52a-72964c614e29)
+
 With add to composer functionality
-![image](https://github.com/user-attachments/assets/f5df667d-9233-49f6-ac2d-beca59bd9ebf)
+![image](https://github.com/user-attachments/assets/b6400a69-6da9-4b4e-9398-4a0cb77ff450)
+
 And more
-![image](https://github.com/user-attachments/assets/074c2b43-6b8b-409b-bab7-27632538857a)
+![image](https://github.com/user-attachments/assets/bd6a287c-63a6-4410-a119-021829afc76a)
 
 
 
