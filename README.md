@@ -21,8 +21,8 @@ This project is a frontend replica of Intercom's AI-powered chat dashboard, buil
 
 Deployed on: [Vercel / Netlify] (Update with your deployment platform)
 
-✨ Features
-💬 Chat Inbox Interface (View chat list, open a conversation)
+**Features**
+ - Chat Inbox Interface (View chat list, open a conversation)
 
  - AI Copilot Panel (Slide-over panel that appears when activated)
 
@@ -32,12 +32,19 @@ Deployed on: [Vercel / Netlify] (Update with your deployment platform)
 
  - Dummy chat data and suggested text to simulate real experience
 
-📸 Preview
-![image](https://github.com/user-attachments/assets/de3b8009-8c7f-46ed-a11d-7a4aed547ee1)
-With add to composer functionality
-![image](https://github.com/user-attachments/assets/f5df667d-9233-49f6-ac2d-beca59bd9ebf)
-And more
-![image](https://github.com/user-attachments/assets/074c2b43-6b8b-409b-bab7-27632538857a)
+   
+**Preview**
+* Here are a few snapshots of the UI in action:
+
+**Chat Inbox + Copilot Panel**
+![image](https://github.com/user-attachments/assets/04d6f55f-918f-49b4-8c6a-8e8a1e862c5a)
+
+**Add to Composer Functionality**
+![image](https://github.com/user-attachments/assets/11377ce9-5299-47ce-b795-fcdf71d4b213)
+
+**More UI Views**
+![image](https://github.com/user-attachments/assets/d0bff342-23eb-4c33-807c-fd3a11a03e54)
+
 
 
 
