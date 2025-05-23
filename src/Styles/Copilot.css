@@ -1,3 +1,4 @@
+/* --- Copilot Sidebar Styles --- */
 /* Sidebar container */
 .copilot-sidebar {
     position: fixed;
@@ -17,11 +18,12 @@
     overflow-y: auto;
 }
 
+/* Sidebar open state */
 .copilot-sidebar.open {
     transform: translateX(0%);
 }
 
-/* Header with close button */
+/* --- Header and Back Button --- */
 .panel-header {
     padding: 12px 20px;
     display: flex;
@@ -29,6 +31,7 @@
     flex-shrink: 0;
 }
 
+/* Back/close button for sidebar */
 .back-btn {
     position: sticky;
     left: 87%;
@@ -39,7 +42,7 @@
     color: #6366f1;
 }
 
-/* Tabs */
+/* --- Tabs for Copilot/Details --- */
 .tab-row {
     display: inline;
     border-bottom: 1px solid #ccc;
@@ -63,10 +66,9 @@
     border-bottom: 3px solid #6366f1;
 }
 
-/* Scrollable content area */
+/* --- Scrollable Content Area --- */
 .tab-content-wrapper {
     flex-grow: 1;
-
     scrollbar-width: thin;
     scrollbar-color: #cbd5e1 transparent;
 }
@@ -80,7 +82,7 @@
     border-radius: 4px;
 }
 
-/* Copilot content */
+/* --- Copilot Content Layout --- */
 .copilot-content {
     display: flex;
     flex-direction: column;
@@ -106,7 +108,7 @@
     line-height: 1.5;
 }
 
-/* Suggestion box */
+/* --- Suggestion Box for Copilot --- */
 .suggest-box {
     background: #ffffff;
     padding: 10px 14px;
@@ -131,6 +133,7 @@
     margin-right: 6px;
 }
 
+/* --- Centered Content for Copilot Intro --- */
 .midcontent {
     display: flex;
     flex-direction: column;
@@ -139,7 +142,7 @@
     align-items: center;
 }
 
-/* Input styles */
+/* --- Input Styles for Copilot Chat --- */
 .ask-input {
     flex-shrink: 0;
     width: calc(100% - 48px);
@@ -165,6 +168,7 @@
     box-shadow: 0 0 6px #6366f1;
 }
 
+/* --- Input Wrapper and Send Icon --- */
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -184,14 +188,14 @@
     padding: 4px;
 }
 
-/* Text containers */
+/* --- Tab Text Containers --- */
 .copilot-text,
 .details-text {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-/* Bottom gradient */
+/* --- Bottom Gradient for Copilot Panel --- */
 .bottom-gradient {
     position: absolute;
     bottom: 0;
@@ -201,10 +205,9 @@
         radial-gradient(circle at bottom right, #ffd1b8 0%, transparent 45%);
     z-index: 0;
     pointer-events: none;
-
 }
 
-/* Messages layout */
+/* --- Message Row and Chat Box Styles --- */
 .message-row.left {
     display: flex;
     justify-content: flex-start;
@@ -217,9 +220,9 @@
     width: 100%;
     padding: 0px 10px;
     max-width: 349px;
-
 }
 
+/* --- Avatar Styles for Copilot Chat --- */
 .avatar {
     width: 32px;
     height: 32px;
@@ -243,6 +246,7 @@
     border-radius: 50%;
 }
 
+/* --- Message Bubble Styles --- */
 .message-bubble {
     padding: 10px 14px;
     border-radius: 12px;
@@ -274,16 +278,15 @@
     color: #222;
 }
 
-
 .message-bubble.user-bubble {
     background-color: transparent;
-
     color: #222;
     padding: 10px 14px;
     border-radius: 12px;
     max-width: 75%;
 }
 
+/* --- Send and Composer Buttons --- */
 .send-btn {
     background-color: #6c5ce7;
     color: white;
@@ -312,7 +315,7 @@
     background-color: #e9e9f8;
 }
 
-/* --- Responsive styles --- */
+/* --- Responsive Styles --- */
 @media (max-width: 900px) {
     .main-container {
         flex-direction: column;
@@ -322,37 +325,32 @@
     }
 
     .copilot-sidebar {
-
-
         z-index: 1000;
         width: 100%;
     }
-
-
-
-
 }
 
+/* For tablets and small screens */
 @media (max-width: 600px) {
-
-
     .copilot-content {
         min-width: 0 !important;
         width: 100% !important;
     }
 
-    /* .back-btn {
+    /* 
+    .back-btn {
         position: sticky;
         left: 24%;
         top: 16%;
-    } */
-
-
+    }
+    This block would reposition the back button for mobile layouts.
+    It is currently commented out, likely to avoid layout issues or because the default .back-btn rule is preferred.
+    Uncomment and adjust if you want to customize the back button's position on small screens.
+    */
 }
 
+/* For very small screens */
 @media (max-width: 400px) {
-
-
     .ask-input {
         font-size: 0.95rem;
         padding: 8px 6px;

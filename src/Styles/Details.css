@@ -1,3 +1,4 @@
+/* --- Sidebar panel container --- */
 .sidebar-panel {
     width: 100%;
     background: #fff;
@@ -7,29 +8,34 @@
     font-weight: bolder;
 }
 
+/* --- Assignee and team info section --- */
 .assignee-info {
     border-bottom: 1px solid #b3a6a68c;
     padding: 20px;
     display: flex;
 }
 
+/* Label for assignee/team */
 .label {
     font-size: 12px;
     color: #888;
     margin-top: 8px;
 }
 
+/* Value for assignee/team */
 .value {
     font-weight: 600;
     margin-top: 4px;
     align-items: end;
 }
 
+/* --- Section styles (not used in collapsibles, but for legacy/other panels) --- */
 .section {
     margin-bottom: 24px;
     border-bottom: 1px solid #b3a6a68c;
 }
 
+/* Section title */
 .section-title {
     font-size: 12px;
     font-weight: 700;
@@ -37,6 +43,7 @@
     margin-bottom: 10px;
 }
 
+/* --- Link item styles (for Links collapsible) --- */
 .link-item {
     display: flex;
     justify-content: space-between;
@@ -66,10 +73,12 @@
     background: #ddd;
 }
 
+/* --- Collapsible section styles --- */
 .collapsible {
     margin-top: 14px;
 }
 
+/* Collapsible header (clickable) */
 .collapsible-header {
     font-size: 15px;
     font-weight: 700;
@@ -82,12 +91,14 @@
     user-select: none;
 }
 
+/* Collapsible content (shown when open) */
 .collapsible-content {
     padding: 10px 0;
     font-size: 13px;
     color: #555;
 }
 
+/* --- Status row for assignee/team --- */
 .status {
     margin-right: 26%;
     margin-left: 2%;

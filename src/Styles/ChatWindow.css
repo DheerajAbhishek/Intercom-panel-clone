@@ -59,11 +59,13 @@
     position: relative;
 }
 
+/* --- Header action buttons container --- */
 .header-buttons {
     display: flex;
     gap: 8px;
 }
 
+/* --- Icon button styles (dark) --- */
 .icon-btn {
     background-color: black;
     font-size: smaller;
@@ -74,6 +76,7 @@
     border: none;
 }
 
+/* --- Icon button styles (light/white) --- */
 .icon-btn-white {
     background-color: rgb(224, 221, 221);
     font-size: 18px;
@@ -83,11 +86,13 @@
     border: none;
 }
 
+/* --- Icon button hover effect --- */
 .icon-btn:hover {
     background-color: #000000dc;
     border-radius: 10px;
 }
 
+/* --- Chat messages area --- */
 .chat-messages {
     padding: 16px;
     overflow-y: auto;

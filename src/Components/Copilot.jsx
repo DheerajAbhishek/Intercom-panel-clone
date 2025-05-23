@@ -1,3 +1,15 @@
+// Copilot.jsx
+// This component renders the Copilot sidebar for AI assistance.
+// Features:
+// - Tabbed interface for Copilot chat and Details
+// - AI chat with suggested questions and responses
+// - "Add to Composer" button to insert AI response into main chat input
+// - Accepts setChatInput to update the main chat input from Copilot
+// Props:
+// - isOpen: Boolean, controls sidebar visibility
+// - onClose: Function to close the sidebar
+// - setChatInput: Function to set the main chat input value
+
 import { useState } from "react";
 import "../Styles/Copilot.css";
 
@@ -7,10 +19,11 @@ import { PanelRight, ArrowUp, SquarePen } from "lucide-react";
 
 // Accept setChatInput as a prop
 const Copilot = ({ isOpen, onClose, setChatInput }) => {
-    const [activeTab, setActiveTab] = useState("copilot");
-    const [input, setInput] = useState("");
-    const [chat, setChat] = useState([]);
+    const [activeTab, setActiveTab] = useState("copilot"); // Controls which tab is active
+    const [input, setInput] = useState(""); // Input for Copilot chat box
+    const [chat, setChat] = useState([]);   // Stores chat messages
 
+    // Handles sending a message in Copilot chat
     const handleSend = () => {
         if (!input.trim()) return;
 
@@ -23,12 +36,14 @@ Once I have checked these details, if everything looks OK, I will send a returns
         setInput("");
     };
 
+    // Handles clicking a suggested question
     const handleSuggestedClick = (suggestedText) => {
         setInput(suggestedText);
     };
 
     return (
         <div className="copilot-sidebar open">
+            {/* Tab row for switching between Copilot and Details */}
             <div className="tab-row">
                 <button
                     className={`tab ${activeTab === "copilot" ? "active" : ""}`}
@@ -42,14 +57,17 @@ Once I have checked these details, if everything looks OK, I will send a returns
                 >
                     <div className="details-text">Details</div>
                 </button>
+                {/* Button to close the Copilot sidebar */}
                 <button className="back-btn" onClick={onClose}>
                     <PanelRight color="black" />
                 </button>
             </div>
 
             <div className="tab-content-wrapper">
+                {/* Copilot chat tab */}
                 {activeTab === "copilot" ? (
                     <div className="copilot-content">
+                        {/* Show intro if no chat yet */}
                         {chat.length === 0 ? (
                             <div className="midcontent">
                                 <img style={{ height: 32, margin: 11 }} src={intercomIcon} alt="" />
@@ -57,11 +75,10 @@ Once I have checked these details, if everything looks OK, I will send a returns
                                 Ask me anything about this conversation.
                             </div>
                         ) : (
+                            // Render chat messages
                             <div className="chat-box" style={{
                                 width: "100%", padding: " 0 10px"
                             }}>
-
-
                                 {chat.map((msg, index) => (
                                     <div key={index} className="message-row left">
                                         <div className="avatar">
@@ -70,6 +87,7 @@ Once I have checked these details, if everything looks OK, I will send a returns
                                         <div className={`message-bubble ${msg.from === "user" ? "user-bubble" : "ai-bubble"}`}>
                                             <div className="name">{msg.from === "user" ? "You" : "Fin"}</div>
                                             <div className="text">  {msg.text}
+                                                {/* "Add to Composer" button for AI responses */}
                                                 {msg.from === "ai" && (
                                                     <div style={{ marginTop: "8px" }}>
                                                         <button
@@ -80,17 +98,14 @@ Once I have checked these details, if everything looks OK, I will send a returns
                                                         </button>
                                                     </div>
                                                 )}
-
-
                                             </div>
                                         </div>
                                     </div>
                                 ))}
-
-
                             </div>
                         )}
 
+                        {/* Suggested question if no chat yet */}
                         {chat.length === 0 && (
                             <div className="suggest-box">
                                 <span
@@ -102,6 +117,7 @@ Once I have checked these details, if everything looks OK, I will send a returns
                             </div>
                         )}
 
+                        {/* Input area for Copilot chat */}
                         <div style={{ position: "relative" }}>
                             <div className="bottom-gradient"></div>
                             <div className="input-wrapper">
@@ -119,6 +135,7 @@ Once I have checked these details, if everything looks OK, I will send a returns
                         </div>
                     </div>
                 ) : (
+                    // Details tab content
                     <div className="copilot-content">
                         <Details />
                     </div>

@@ -1,3 +1,11 @@
+// Inbox.jsx
+// This component renders the chat inbox/sidebar.
+// Features:
+// - Displays a list of chat conversations
+// - Highlights the active/selected chat
+// - Includes selectors for filtering/sorting chats
+// - Renders footer buttons for sidebar actions
+
 import { useState } from "react";
 import Chat from "./Chat";
 import "../Styles/Inbox.css";
@@ -6,6 +14,7 @@ import { PanelLeft, AlignJustify } from "lucide-react"
 export default function Inbox() {
     const [activeIndex, setActiveIndex] = useState(null);
 
+    // List of chat conversations to display in the inbox
     const chatData = [
         {
             id: 1,
@@ -29,10 +38,12 @@ export default function Inbox() {
             time: "2min",
         },
     ];
+
     return (
         <div className="inbox-container">
             <h2>Your Inbox</h2>
 
+            {/* Selectors for filtering/sorting chats */}
             <div className="selectors">
                 <select name="open">
                     <option value="open">Open</option>
@@ -42,6 +53,7 @@ export default function Inbox() {
                 </select>
             </div>
 
+            {/* Render each chat item */}
             {chatData.map((chat, index) => (
                 <Chat
                     key={chat.id}
@@ -52,8 +64,9 @@ export default function Inbox() {
                     isActive={index === activeIndex}
                     onClick={() => setActiveIndex(index)}
                 />
-
             ))}
+
+            {/* Footer buttons for sidebar actions */}
             <div className="chat-footer">
                 <button ><PanelLeft size={15} /></button>
                 <button><AlignJustify size={15} /></button>

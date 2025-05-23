@@ -13,28 +13,31 @@ export default function Window({ input, setInput }) { // Accept as props
 
         <div className={`main ${isOpen ? "copilot-open" : ""}`}>
 
+            {/* Main chat window area */}
             <div className="chat-window media">
                 <div className="chat-window-content">
+                    {/* Chat header with contact name and action buttons */}
                     <div className="chat-header">
                         <h3>Nikola Tesla</h3>
                         <div className="header-buttons">
+                            {/* Action buttons: more options and snooze */}
                             <button className="icon-btn-white">...</button>
                             <button className="icon-btn-white">
                                 <img src={snoozeIcon} alt="Snooze" />
                             </button>
+                            {/* Button to close Copilot panel */}
                             {isOpen && <button className="icon-btn" onClick={() => setIsOpen(false)}>
                                 Close
                             </button>}
-
-
-                            {/* Show button to open Copilot only when it's closed */}
+                            {/* Button to open Copilot panel (only when closed) */}
                             {!isOpen && (
                                 <CopilotButton onClick={() => setIsOpen(true)} />
-
                             )}
                         </div>
                     </div>
+                    {/* Chat messages area */}
                     <div className="chat-messages">
+                        {/* Received message with avatar */}
                         <div className="message-row received-avatar">
                             <p className="avatar-recieved">N</p>
                             <div className="message-row received">
@@ -44,7 +47,7 @@ export default function Window({ input, setInput }) { // Accept as props
                                 </div>
                             </div>
                         </div>
-
+                        {/* Sent message with avatar */}
                         <div className="message-row sent">
                             <div>
                                 <div className="message sent">

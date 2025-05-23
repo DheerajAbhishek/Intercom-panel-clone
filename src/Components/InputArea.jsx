@@ -1,9 +1,16 @@
+// InputArea.jsx
+// This component renders an auto-growing textarea for chat input.
+// Features:
+// - Automatically adjusts its height based on content
+// - Accepts value and onChange as props for controlled input
+
 import { useRef, useEffect } from "react";
 import "../Styles/input.css"; // optional
 
 export default function AutoGrowingTextarea({ value, onChange }) {
     const textareaRef = useRef(null);
 
+    // Adjusts the textarea height to fit content
     const handleInput = () => {
         const textarea = textareaRef.current;
         textarea.style.height = "auto";

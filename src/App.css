@@ -43,16 +43,17 @@
 .main-container {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 98vh;
 }
 
+/* --- Chat Section Layout --- */
 .chat-section {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-/* Mobile view */
+/* --- Mobile View Styles --- */
 @media (max-width: 600px) {
   .main-container {
     flex-direction: column;
@@ -66,17 +67,14 @@
 
   .chat-window {
     flex: 2 1 60vw !important;
-
     min-width: 0 !important;
     width: 77vw !important;
     height: 100dvh !important;
     flex-basis: 77vw !important;
   }
-
-
-
 }
 
+/* --- Tablet View Styles --- */
 @media (max-width: 900px) {
   .main-container {
     flex-direction: column;

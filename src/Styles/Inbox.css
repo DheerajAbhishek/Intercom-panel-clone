@@ -1,3 +1,4 @@
+/* --- Inbox Sidebar Container --- */
 .inbox-container {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* --- Inbox Header --- */
 .inbox-container h2 {
     padding: 16px;
     border-bottom: 1px solid #e5e5e5;
@@ -16,6 +18,7 @@
     font-weight: bold;
 }
 
+/* --- Flex Row for Filters/Selectors --- */
 .inbox-container .flex {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,7 @@
     margin-bottom: 20px;
 }
 
+/* --- Select Dropdown Styles --- */
 .inbox-container select,
 .selectors select {
     padding: 8px 12px;
@@ -40,12 +44,14 @@
     border-color: #888;
 }
 
+/* --- Selector Row --- */
 .selectors {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
 
+/* --- Chat Footer (Action Buttons) --- */
 .chat-footer {
     position: relative;
     top: 59%;
@@ -75,6 +81,7 @@
 
 /* ------------------- Responsive Breakpoints ------------------- */
 
+/* --- Tablet Styles --- */
 @media (max-width: 900px) {
     .main-container {
         flex-direction: column;
@@ -91,14 +98,13 @@
         overflow: visible;
     }
 
-
-
-
+    /* Hide chat footer on tablet */
     .chat-footer {
         display: none
     }
 }
 
+/* --- Mobile Styles --- */
 @media (max-width: 600px) {
     .inbox-container {
         width: 100%;
@@ -137,6 +143,7 @@
     }
 }
 
+/* --- Very Small Mobile Styles --- */
 @media (max-width: 400px) {
     .inbox-container h2 {
         font-size: 13px;
