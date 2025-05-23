@@ -46,4 +46,4 @@ And more
 
 🚀 Live Demo
 🔗 Click here to visit the live site
->>>>>>> eafca98af0b217c6fe41088ae9979b954755000d
+>>>>>>>(https://intercom-panel-clone-jyi7.vercel.app/)
