@@ -1,0 +1,42 @@
+.auto-textarea {
+    transition: height 0.2s ease;
+    line-height: 1.5;
+
+    resize: none;
+
+    width: 100%;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    height: 50%;
+
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 900px) {
+    .auto-textarea {
+        font-size: 14px;
+        padding: 6px 4px;
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 600px) {
+    .auto-textarea {
+        font-size: 1rem;
+        padding: 8px 6px;
+        border-radius: 6px;
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .auto-textarea {
+        font-size: 0.95rem;
+        padding: 6px 3px;
+        border-radius: 5px;
+        min-height: 36px;
+    }
+}

@@ -1,0 +1,208 @@
+.sidebar-panel {
+    width: 100%;
+    background: #fff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.assignee-info {
+    border-bottom: 1px solid #b3a6a68c;
+    padding: 20px;
+    display: flex;
+}
+
+.label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+}
+
+.value {
+    font-weight: 600;
+    margin-top: 4px;
+    align-items: end;
+}
+
+.section {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #b3a6a68c;
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eeeeee4a;
+    font-size: large;
+    font-weight: 600;
+}
+
+.link-item span {
+    font-size: 16px;
+}
+
+.link-item button {
+    background: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.link-item button:hover {
+    background: #ddd;
+}
+
+.collapsible {
+    margin-top: 14px;
+}
+
+.collapsible-header {
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 24px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.collapsible-content {
+    padding: 10px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.status {
+    margin-right: 26%;
+    margin-left: 2%;
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 900px) {
+    .sidebar-panel {
+        font-size: 13px;
+    }
+
+    .assignee-info {
+        padding: 14px;
+    }
+
+    .section {
+        margin-bottom: 18px;
+    }
+
+    .collapsible-header {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .link-item {
+        font-size: 1rem;
+        padding: 7px 8px;
+    }
+
+    .link-item span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar-panel {
+        font-size: 12px;
+    }
+
+    .assignee-info {
+        padding: 10px 4vw;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .section {
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .link-item {
+        font-size: 0.98rem;
+        padding: 6px 4vw;
+    }
+
+    .link-item span {
+        font-size: 13px;
+    }
+
+    .link-item button {
+        width: 22px;
+        height: 22px;
+        font-size: 13px;
+    }
+
+    .collapsible-header {
+        font-size: 13px;
+        padding: 7px 8vw;
+    }
+
+    .collapsible-content {
+        font-size: 12px;
+        padding: 7px 0;
+    }
+
+    .status {
+        margin-right: 10%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar-panel {
+        font-size: 11px;
+    }
+
+    .assignee-info {
+        padding: 7px 2vw;
+    }
+
+    .section-title {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .link-item {
+        font-size: 0.95rem;
+        padding: 5px 2vw;
+    }
+
+    .link-item span {
+        font-size: 12px;
+    }
+
+    .collapsible-header {
+        font-size: 12px;
+        padding: 6px 4vw;
+    }
+
+    .collapsible-content {
+        font-size: 11px;
+        padding: 5px 0;
+    }
+}

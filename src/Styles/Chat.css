@@ -1,0 +1,270 @@
+.chat-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-radius 0.2s ease;
+    width: 85%;
+    border-radius: 6px;
+}
+
+.chat-container:hover {
+    background-color: #f0f1f5;
+}
+
+.chat-avatar {
+    background-color: #6a6fd1;
+    /* Tailwind blue-600 */
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.chat-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #111827;
+    /* Tailwind gray-900 */
+}
+
+.chat-preview {
+    font-size: 14px;
+    color: #6b7280;
+    /* Tailwind gray-500 */
+}
+
+.chat-container.active-chat {
+    background-color: #d6ddf3;
+    border-radius: 7px;
+    border: 1px #5d4191;
+}
+
+.chat-name-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.chat-name {
+    font-weight: bold;
+}
+
+.chat-time {
+    font-size: 0.75rem;
+    color: #999;
+    position: relative;
+    left: 28%;
+}
+
+/* Button to open Copilot */
+.open-panel-btn {
+    background: #1e293b;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+}
+
+/* Sidebar styling */
+.copilot-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background: #fffcfc;
+    color: rgb(0, 0, 0);
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.copilot-sidebar.open {
+    transform: translateX(0%);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tab-row {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #1e293b;
+}
+
+.tab {
+    background: none;
+    border: none;
+    color: #cbd5e1;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.tab.active {
+    color: white;
+    border-bottom: 3px solid #6366f1;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+/* Copilot content */
+.copilot-content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.suggest-box {
+    background: #1e293b;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 16px 0;
+    color: #e2e8f0;
+}
+
+.tag {
+    background: #475569;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.ask-input {
+    width: 100%;
+    padding: 10px;
+    background: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        height: auto !important;
+        min-height: 100dvh;
+        overflow-y: visible !important;
+    }
+
+    .chat-time {
+        position: absolute;
+        left: 94%
+    }
+
+
+
+    .chat-container {
+        width: 98%;
+        padding: 10px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        width: 100vw;
+        height: 100dvh;
+    }
+
+    .chat-container {
+        width: 98%;
+        padding: 10px 6px;
+    }
+
+    .chat-avatar {
+        width: 26px;
+        height: 26px;
+        font-size: 15px;
+    }
+
+    .chat-name {
+        font-size: 15px;
+    }
+
+    .chat-preview {
+        font-size: 13px;
+    }
+
+
+    .panel-header {
+        padding: 8px;
+    }
+
+    .tab-row {
+        font-size: 15px;
+    }
+
+    .tab {
+        padding: 10px 0;
+    }
+
+    .suggest-box {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .ask-input {
+        font-size: 1rem;
+        min-height: 44px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .copilot-sidebar {
+        height: 70vh;
+    }
+
+    .chat-container {
+        font-size: 13px;
+    }
+
+    .chat-avatar {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    .ask-input {
+        font-size: 0.95rem;
+        padding: 6px;
+    }
+}
