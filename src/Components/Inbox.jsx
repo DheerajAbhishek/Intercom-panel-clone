@@ -10,7 +10,7 @@ export default function Inbox() {
         {
             id: 1,
             name: "Nikola Tesla",
-            preview: "I bought a product from  your",
+            preview: "I bought a product from  ",
             avatar: "N",
             time: "5min",
         },
