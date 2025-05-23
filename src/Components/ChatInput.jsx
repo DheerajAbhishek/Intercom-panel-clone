@@ -1,4 +1,4 @@
-import "../styles/ChatInput.css";
+import "../Styles/Chatnput.css";
 import AutoGrowingTextarea from "./InputArea";
 import { Zap, Smile, Paperclip, MessageSquareText, ChevronDown } from 'lucide-react';
 
