@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import "../Styles/Input.css"; // optional
+import "../Styles/input.css"; // optional
 
 export default function AutoGrowingTextarea({ value, onChange }) {
     const textareaRef = useRef(null);
