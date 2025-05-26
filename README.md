@@ -19,7 +19,7 @@ This project is a frontend replica of Intercom's AI-powered chat dashboard, buil
 
  - Lucide-react (for icons)
 
-Deployed on: [Vercel / Netlify] (Update with your deployment platform)
+Deployed on: Vercel 
 
 **Features**
  - Chat Inbox Interface (View chat list, open a conversation)
