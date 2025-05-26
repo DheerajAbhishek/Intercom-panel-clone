@@ -37,13 +37,16 @@ Deployed on: [Vercel / Netlify] (Update with your deployment platform)
 * Here are a few snapshots of the UI in action:
 
 **Chat Inbox + Copilot Panel**
-![image](https://github.com/user-attachments/assets/04d6f55f-918f-49b4-8c6a-8e8a1e862c5a)
+![image](https://github.com/user-attachments/assets/27cd7bcf-1f3a-4682-9e42-75f19b1ceed5)
+
 
 **Add to Composer Functionality**
-![image](https://github.com/user-attachments/assets/11377ce9-5299-47ce-b795-fcdf71d4b213)
+![image](https://github.com/user-attachments/assets/e548a6d2-6e7b-471f-b8d2-648ace9ad53f)
+
 
 **More UI Views**
-![image](https://github.com/user-attachments/assets/d0bff342-23eb-4c33-807c-fd3a11a03e54)
+![image](https://github.com/user-attachments/assets/437abade-db57-4a0f-8881-1fdfafa186b6)
+
 
 
 
